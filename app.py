@@ -10,12 +10,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from database import init_db
-from routes.auth import auth_bp
-from routes.sensors import sensors_bp
-from routes.risk import risk_bp
-from routes.alerts import alerts_bp
-from routes.analytics import analytics_bp
-from routes.emergency import emergency_bp
+from auth import auth_bp
+from sensors import sensors_bp
+from risk import risk_bp
+from alerts import alerts_bp
+from analytics import analytics_bp
+from emergency import emergency_bp
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("FLASK_SECRET_KEY", "landsafe-ner-dev-secret")
