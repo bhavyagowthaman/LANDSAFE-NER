@@ -3,7 +3,7 @@ from database import get_db
 from auth_utils import login_required
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from ai_model.risk_model import predict_risk, FEATURE_NAMES
+from risk_model import predict_risk, FEATURE_NAMES
 
 risk_bp = Blueprint("risk", __name__)
 
