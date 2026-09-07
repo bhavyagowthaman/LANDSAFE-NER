@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api'
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://landsafe-nerbackend.onrender.com/api'
 
 function getToken() {
   return localStorage.getItem('landsafe_token')
