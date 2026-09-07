@@ -6,7 +6,7 @@ from database import get_db
 from auth_utils import login_required
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from ai_model.risk_model import predict_risk
+from risk_model import predict_risk
 
 sensors_bp = Blueprint("sensors", __name__)
 
